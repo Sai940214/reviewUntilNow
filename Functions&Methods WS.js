@@ -41,19 +41,26 @@ printLoremIpsum();
 //Do this three times with different variable values.
 
 function sum(firstNumber,secondNumber){
-    if ( typeof firstNumber === 'number' &&typeof secondNumber === 'number'){
+    if ( typeof firstNumber === 'number' && typeof secondNumber === 'number'){
         let sumOfNumbers=firstNumber + secondNumber
             return sumOfNumbers
     } 
 }
+sum(1,2);
+sum(3,4);
+sum(6,7);
 
-function callSumThreeTimes(){
-    const result1 = sum(5, 3);
-    const result2 = sum(10, 7);
-    const result3 = sum(15, 4);
-    console.log(result1);
-    console.log(result2);
-    console.log(result3);
+//5.4 Task 4 Circumference of a Circle
+//Create a program that calculates the circumference of a circle 
+//when radius is given (circumference = 2 * π *radius). 
+//Call this method three times with different parameters and print out the results.
+
+function circumference(radius){
+    if (typeof radius === 'number' && radius > 0){
+        console.log ("Circumference of a circle with radius " + radius + " is " + radius*2*Math.PI)
+    } 
+
 }
 
-callSumThreeTimes();
+circumference(3);
+circumference(5);
